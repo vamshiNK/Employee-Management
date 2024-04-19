@@ -1,0 +1,41 @@
+<div class="container">
+  <div class="my-des">
+    <h1>Add Employee Here</h1>
+    <form (ngSubmit)="onsubmit()">
+      <div class="form-group">
+        <label for="fname">Frist Name</label>
+        <input
+          type="text"
+          class="form-control"
+          id="fname"
+          name="fname"
+          [(ngModel)]="employee.fname"
+          placeholder="Enter Frist Name"
+        />
+      </div>
+      <div class="form-group">
+        <label for="lname">Last Name</label>
+        <input
+          type="text"
+          class="form-control"
+          id="lname"
+          name="lname"
+          [(ngModel)]="employee.lname"
+          placeholder="Enter Last Name"
+        />
+      </div>
+      <div class="form-group">
+        <label for="Email1">Email address</label>
+        <input
+          type="email"
+          class="form-control"
+          id="email"
+          name="email"
+          [(ngModel)]="employee.email"
+          placeholder="Enter email"
+        />
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+</div>
